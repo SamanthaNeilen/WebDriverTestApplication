@@ -14,6 +14,10 @@
 	Next start the test from the Test Explorer window.
 </p>
 <p>
+	To run the WebTest_Selenium_CustomerCreate_PageObject_Example_Test test, first run the CodedUITestApplication.Web without debugging. 
+	Next start the test from the Test Explorer window. This is the same test as the WebTest_Selenium_TestForm test but using the page object implementation model.
+</p>
+<p>
 	To run the Test_Windows_Calculator test, make sure that path to calc.exe is vlid for your machine.
 	Next start the test from the Test Explorer window. This test was written for the calculator on a Windows 2012 server with english locale and may not work on other locales or with the newer implementation of windows calculator for Windows 10.
 </p>
@@ -26,7 +30,6 @@
 This project uses the files in the Assets folder of the test project. All files in the folder have a build action and get copied to the bin folder where they are referenced from the code or web.config.
 When using older MS test frameworks that run in the seperate TestResults/Out folder, you will need to use a TestSettings file to get the Assets folder deployed to that directory.
 </p>
-
 <h3>Discovering the control Id values for your windows applications</h3>
 <p>
 If you do not know the Id of a windows control you can use the inspect.exe tool (<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd318521(v=vs.85).aspx" target="_blank">https://msdn.microsoft.com/en-us/library/windows/desktop/dd318521(v=vs.85).aspx</a>).

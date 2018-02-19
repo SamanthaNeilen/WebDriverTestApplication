@@ -57,6 +57,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="PageObjectExample\Pages\ApplicationUnderTest.cs" />
+    <Compile Include="PageObjectExample\Pages\CustomerCreatePage.cs" />
+    <Compile Include="PageObjectExample\Tests\CustomerCreate.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebTests.cs" />
     <Compile Include="WindowsTests.cs" />

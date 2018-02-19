@@ -22,8 +22,6 @@ namespace WebDriverTestApplication.Tests
 
         protected string StartUrl = ConfigurationManager.AppSettings["ApplicationStartUrl"];
 
-
-        //TODO Fix browsers 
         [TestMethod, DataSource("Browsers")]
         public void WebTest_Selenium_TestForm()
         {
