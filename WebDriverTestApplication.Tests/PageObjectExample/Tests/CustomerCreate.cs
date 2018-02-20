@@ -1,5 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using WebDriverTestApplication.Shared.Resources;
 using WebDriverTestApplication.Tests.PageObjectExample.Pages;
 
@@ -43,9 +42,9 @@ namespace WebDriverTestApplication.Tests.PageObjectExample.Tests
 
             //ASSERT
             Assert.IsTrue(customerPage.IsCurrentPage());
-            Assert.IsFalse(customerPage.ShowsValidationError("Name"));
-            Assert.IsFalse(customerPage.ShowsValidationError("EmailAddress"));
-            Assert.IsFalse(customerPage.ShowsRequiredFieldValidationError(Labels.EmailAddress));
+            Assert.IsFalse(_applicationUnderTest.ShowsValidationError("Name"));
+            Assert.IsTrue(_applicationUnderTest.ShowsValidationError("EmailAddress"));
+            Assert.IsTrue(_applicationUnderTest.ShowsRequiredFieldValidationError(Labels.EmailAddress));
         }
     }
 }

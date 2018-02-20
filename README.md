@@ -30,6 +30,14 @@
 This project uses the files in the Assets folder of the test project. All files in the folder have a build action and get copied to the bin folder where they are referenced from the code or web.config.
 When using older MS test frameworks that run in the seperate TestResults/Out folder, you will need to use a TestSettings file to get the Assets folder deployed to that directory.
 </p>
+<h3>Using the page object model for UI tests</h3>
+<p>
+The page object model is way to abstract the test framework logic away from your tests. Your test runs on page classes. A screen, page or set of repeating controls (like a repeating menu) in the application are represented by a single "page" class in the test project. 
+This abstraction makes sure that when the UI implementation is changed, that you only have to modify the page class for that part of the UI. The use of the page object model will also make your tests more readable and will keep the test code free of the code for the framework used to access the UI.
+</p>
+<p>
+	The WebTest_Selenium_CustomerCreate_PageObject_Example_Test in this project, is an example of the use of the page object pattern.
+</p>
 <h3>Discovering the control Id values for your windows applications</h3>
 <p>
 If you do not know the Id of a windows control you can use the inspect.exe tool (<a href="https://msdn.microsoft.com/en-us/library/windows/desktop/dd318521(v=vs.85).aspx" target="_blank">https://msdn.microsoft.com/en-us/library/windows/desktop/dd318521(v=vs.85).aspx</a>).
